@@ -1,0 +1,311 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-items: center;
+}
+#top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.nav-left a.register {
+    color: blue;
+    font-weight: bold;
+}
+
+.nav-right img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+#top-searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 5px;
+}
+
+#top-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#top-header-left {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#category-dropdown-menu {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#category-dropdown-menu span {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#category-dropdown-button-icon {
+    width: 10px;
+    height: 10px;
+}
+
+#category-dropdown-menu button {
+    background: none;
+    border: none;
+}
+
+#top-header-middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#search-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+#search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#search-bar select {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#top-header-right {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#top-header-right button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#top-header-right a {
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+}
+
+#top-header-right a:hover {
+    text-decoration: underline;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+#carousel-slide {
+  margin: auto;
+  background: black;
+  width: 50%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+}
+
+#main-slide-carousel {
+  display: flex;
+  gap: 10px; 
+}
+
+#main-slide-carousel img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#destination-widgets, #favorites, #user-zone, #flashsale-highlight {
+  width: 50%;
+}
+
+#fav-widgets-icons {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scrollbar-color: #fff transparent ;
+  gap: 10px;
+}
+
+.widget-icon {
+  text-align: center;
+  font-size: 12px;
+}
+
+.widget-icon img {
+  max-width: 50px;
+  max-height: 50px;
+  background: #e1f1ff;
+  border-radius: 10px;
+}
+
+#dest-widgets {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+#dest-widgets a img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#banner {
+  width: 50%;
+  justify-content: center;
+}
+
+#banner img {
+  max-width: 95%;
+}
+
+#user-zone {
+  display: inline-block;
+  background: url('./assets/blibli/newuserzone-2023-desktop.webp') no-repeat center center;
+  border-radius: 10px;
+  padding:10px;
+}
+
+#voucher-card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 100%;
+}
+
+#voucher-info-icon {
+  display: none;
+}
+
+#title-zona-baru {
+  color: white;
+  font-size: 20px;
+  font-family: Helvetica;
+  font-style: bold;
+}
+
+.voucher-card {
+  background: url('./assets/blibli/voucher-bg.png') no-repeat center center;
+  border-radius: 10px;
+  width: 200px;
+  height: 70%;
+  min-height: 100px;
+  padding: 10px;
+}
+
+#flashsale-highlight {
+  background: url('./assets/blibli/flashsale-bg.webp') no-repeat center center;
+  min-height: 100px;
+}
+
+#footer {
+  width: 100%;
+  background: #232F3E;
+  align-content: center;
+  align-items: center;
+  justify-content:center;
+  padding: 10px;
+
+}
+
+#footer-top {
+  display:flex;
+  flex-direction: row;
+  height: 30%;
+  justify-content: center;
+  gap: 10%;
+  border-bottom: 2px solid white;
+}
+
+#footer-bottom {
+  height: 10%;
+}
+
+#footer-column ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#footer-column span {
+  color: white;
+  font-style: bold;
+  font-size: 18px;
+}
+
+#footer-column ul li a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
